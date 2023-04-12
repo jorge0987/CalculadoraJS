@@ -40,7 +40,7 @@ input {
 
 .text {
   margin: 5px;
-  width: 190px;
+  width: 16.5rem;
   height: 26px;
   border-radius: 5%;
   letter-spacing: 5px;
@@ -82,4 +82,42 @@ input {
 
 .ora {
   background-color: black;
+}
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 2em;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: #f90;
+  color: white;
+}
+.equals {
+  background-color: #39f;
+  color: white;
 }
